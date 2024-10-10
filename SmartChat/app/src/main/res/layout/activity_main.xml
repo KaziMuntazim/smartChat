@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/uper_main"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/main_uper"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/app_logos"
+            />
+
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logout"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reletiv_main"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="570dp"
+        android:layout_below="@id/uper_main">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin = "10dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/rc_view"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/tool_back"
+        android:layout_height="80dp">
+
+
+        <ImageView
+            android:id="@+id/cmara_main"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera"
+            />
+        <ImageView
+            android:id="@+id/chat_main"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chating"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            />
+        <ImageView
+            android:id="@+id/seting_main"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/setting"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

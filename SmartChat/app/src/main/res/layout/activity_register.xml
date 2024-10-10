@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+    <EditText
+        android:hint="Enter The Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uname_edit"
+        android:layout_below="@+id/sign_up"
+        android:layout_margin = "20dp"
+        android:background="@drawable/edit_back"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:hint="Enter The Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uemail_edit"
+        android:layout_below="@+id/uname_edit"
+        android:layout_margin = "20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:background="@drawable/edit_back2"
+        android:padding="10dp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:hint="Enter The Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upass_edit"
+        android:layout_below="@+id/uemail_edit"
+        android:layout_margin = "20dp"
+        android:background="@drawable/edit_back"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:hint="Enter The Confirm Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpass_edit"
+        android:layout_below="@+id/upass_edit"
+        android:layout_margin = "20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:background="@drawable/edit_back2"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        />
+    <ImageView
+        android:id="@+id/register_btn"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/cpass_edit"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sign_up"
+        />
+    <TextView
+        android:id="@+id/acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="Alredy Have Account?"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/logins_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_btn"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/acc"
+        android:layout_marginLeft="10dp"
+        android:text="Sign In"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_login"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="270dp"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/camara_add"
+            app:civ_border_color="#FF000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/gb_login2"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
